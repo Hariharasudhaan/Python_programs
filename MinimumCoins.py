@@ -1,0 +1,20 @@
+n=int(input("Enter the Cent:"))         #Getting the Cent value
+c=0
+while(n!=0):
+    if(n>=25):
+        temp=n//25
+        c=c+temp
+        n=n-(25*temp)
+    elif(n>=10):
+        temp=n//10
+        c=c+temp                        #Loop for Counting the Number of Coins
+        n=n-(10*temp)
+    elif(n>=5):
+        temp=n//5
+        c=c+temp
+        n=n-(5*temp)
+    elif(n>=1):
+        temp=n//1
+        c=c+temp
+        n=n-(1*temp)
+print("Total Coins:",c)                 #Print the Total Coins
